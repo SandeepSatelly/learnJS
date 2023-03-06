@@ -1,4 +1,4 @@
-console.log('Hello World - From JS file');
+/* console.log('Hello World - From JS file');
 let firstName = 'name';
 let age = 30;
 console.log(firstName, age);
@@ -99,98 +99,28 @@ switch (role) {
     console.log("Unknown user");
 }
 
-//LOOP
-//ForLoop
-
-for(let i=1; i<10; i++) {
-    console.log("still working at %s'O clock", i);
-    if(i%2!==0)
-    console.log("printing odd numbers: %s", i);
-}
 
 
-//for-in loop -> Iterate items in an object
+//Garbage Collection in JS automated - Maintains memory by allocating and deallocatin
 
-const person = {
-    name:"Sandy",
-    age:30
-};
+//Math - Object
+console.log(Math.round(Math.random() * (90 - 20) + 20)/100);
+const name = 'sandy';
+//Template literals used with `` 
+const templateLiteral = `Hi ${name},
+How are you?
 
-for(let key in person)
-    console.log(key, person[key]);
+Hope everthing is good!
 
-const colors = ['red', 'yellow', 'blue'];
-for(let index in colors)
-    console.log(index, colors[index]);
+Thanks
+Sandy`;
 
-const arr = [true, false, true, false, false]
-let s = 0;
-for(let index in arr){
-    if (arr[index] === false){
-        s++;
-    }
-}
-console.log(s);
+console.log(templateLiteral);
 
 
-//for-of loop -> Iterate over items in an array
-//general sybntax - for(let element of array) 
-for(let color of colors)
-    console.log(color);
+//Date object
+ const dateToday = new Date();
 
-s = 0;
-for(let i of arr){
-    if (i === true)
-        s++;
-    }
-console.log(s);
+*/
 
-//Here we are returning the number and in 2nd example we are returning boolean value
-//We don't need to mention true or false, return statement takes care
-function max(a,b){
-return a>b ? a: b;
-}
-console.log(max(13,5));
-
-function max2(a,b){
-    return a>b;
-    }
-console.log(max2(13,5));
-
-function fizzBuzz(input) {
-    if (typeof input !== 'number') 
-        return NaN;
-
-    if(input % 3 === 0 && input % 5 === 0)
-         return 'fizzBuzz';
-        
-    if(input%3 === 0)
-           return 'fizz';
-        
-    if(input%5 === 0)
-           return 'buzz';
-    return input;
-}
-console.log(fizzBuzz(5));
-
-//check speed limit 
-//speed limit 70 ; each 5 + on 70 is 1 point ; 12 points suspend
-const speedLimit = 70;
-const kmPerPoint = 5;
-const suspension = 12;
-
-function checkSpeed(speed) {
-    
-    if (typeof speed !== 'number')
-    return NaN;
-    if (speed<=speedLimit + kmPerPoint)
-    return 'OK'
-    if(speed>speedLimit) {
-       const limit = Math.floor((speed-speedLimit)/kmPerPoint);
-        if(limit > suspension)
-        return 'License Suspended';
-    return ("Point : "+ limit);
-    }
-}
-
-console.log(checkSpeed(76));
+//Arrays
