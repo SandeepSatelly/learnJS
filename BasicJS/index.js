@@ -1,4 +1,4 @@
-/* console.log('Hello World - From JS file');
+console.log('Hello World - From JS file');
 let firstName = 'name';
 let age = 30;
 console.log(firstName, age);
@@ -143,7 +143,7 @@ for(let i of arr){
     if (i === true)
         s++;
     }
-console.log(s); */
+console.log(s);
 
 //Here we are returning the number and in 2nd example we are returning boolean value
 //We don't need to mention true or false, return statement takes care
